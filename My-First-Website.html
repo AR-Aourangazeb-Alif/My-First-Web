@@ -5,34 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Travel Blog</title>
     <link rel="shortcut icon" href="beach-tour-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="My-First-Website.css">
 </head>
 <body>
-    <img src="beach-tour-logo.png" alt="LOGO" height="60px" weight="60px">
-    <h2><i>My Travel Blog</i></h2>
-    <div>
-        <p>
-            I had always wanted to visit St. Martin Island, the only coral island in Bangladesh. It was a dream of mine to see the turquoise water, the white sand, and the coconut trees. So when I got the chance to join a group of friends for a three-day trip, I was overjoyed.
-            <br><br>
-            We took a bus from Dhaka to Teknaf, the southernmost point of the mainland. From there, we boarded a ship that would take us to the island. The journey was about two hours long, but it felt like an eternity. I was eager to see the island, but also nervous about the sea. I had never been on a ship before, and I was afraid of... <button>Read More</button>
-        </p>
+    <div id="header">
+        <img src="beach-tour-logo.png" alt="LOGO" id="logo">
+        <h2 id="title">My Travel Blog</h2>
     </div>
-    <span><b>What I bought</b></span>
-    <ol>
-        <li>Shirt</li>
-        <li>Pant</li>
-        <li>Hawai Choppol</li>
-        <li>Sunglass</li>
-        <li>Gamcha</li>
-    </ol>
-    <span><b>My favourite food</b></span>
-    <ul>
-        <li>Bamboo Biriyani</li>
-        <li>Bamboo Chicken</li>
-        <li>Shrimp fry</li>
-        <li> Dumplings</li>
-        <li>Noodles er bhorta</li>
-    </ul>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfXN5HPnLH10vNWOaqLPX6nLGlwDScUJ7iYmiAM-7AfA&s" alt="My Favourite Food" width="300px" height="250px"> <br>
-    <a href="https://www.youtube.com/watch?v=Zu2Spp4nrTM&list=RDZu2Spp4nrTM&start_radio=1" target="_blank">My Favourite Song!!</a>
+    
+    <div id="blog">
+        
+        <p class="description">
+            I had always dreamed of visiting St. Martin Island, the only coral island in Bangladesh. I had heard so much about its natural beauty, its crystal clear water, its rich marine life, and its friendly people. I finally got the chance to go there last year, and it was one of the best trips of my life.
+            <br><br>
+            I took a bus from Dhaka to Teknaf, the southernmost point of the mainland. From there, I boarded a ship that would take me to the island. The journey was about three hours long, but I didn't mind. I enjoyed the view of the Bay of Bengal, the fresh breeze, and the occasional sight of dolphins and <b>. . .</b>
+            <button>Read More</button>
+            </p>
+    
+        <div id="photo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfXN5HPnLH10vNWOaqLPX6nLGlwDScUJ7iYmiAM-7AfA&s" alt="Photos that I clicked in St.Martin (1)" class="stmartin">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfXN5HPnLH10vNWOaqLPX6nLGlwDScUJ7iYmiAM-7AfA&s" alt="Photos that I clicked in St.Martin (2)" class="stmartin">
+        </div>
+    </div>
+    
+    <p class="lsit-title">What I bought</p>
+    <div class="list" id="list1">
+        <ol>
+            <li>Shirt</li>
+            <li>Pant</li>
+            <li>Hawai Choppol</li>
+            <li>Sunglass</li>
+            <li>Gamcha</li>
+        </ol>
+    </div>
+
+    <p class="lsit-title">My favourite food</p>
+    <div class="list"> 
+        <ul>
+            <li>Bamboo Biriyani</li>
+            <li>Bamboo Chicken</li>
+            <li>Shrimp fry</li>
+            <li> Dumplings</li>
+            <li>Noodles er bhorta</li>
+        </ul>
+    </div>
+
+    <div class="foods">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfXN5HPnLH10vNWOaqLPX6nLGlwDScUJ7iYmiAM-7AfA&s" alt="My Favourite Food" width="300px" id="foodimg">
+    </div>
+    
+    <div id="link">
+        <a href="https://www.youtube.com/watch?v=Zu2Spp4nrTM&list=RDZu2Spp4nrTM&start_radio=1" target="_blank"> >>> Click To Listen To My Favourite Song That I Heard In My Travel!!</a>
+    </div>
 </body>
 </html>
