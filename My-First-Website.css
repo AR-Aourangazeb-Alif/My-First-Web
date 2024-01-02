@@ -5,11 +5,11 @@
 
 @font-face {
     font-family: myFont;
-    src: url(Fonts/Aorell-mLEM5.ttf);
+    src: url(Fonts/aorell.ttf);
 }
 @font-face {
     font-family: contentFont;
-    src: url(Fonts/Xillian\ Regular.otf);
+    src: url(Fonts/xillian.otf);
 }
 
 body{
