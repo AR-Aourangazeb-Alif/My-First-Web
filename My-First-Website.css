@@ -2,30 +2,49 @@
     margin: 0px;
     padding: 0px;
 }
+
+@font-face {
+    font-family: myFont;
+    src: url(Fonts/Aorell-mLEM5.ttf);
+}
+@font-face {
+    font-family: contentFont;
+    src: url(Fonts/Xillian\ Regular.otf);
+}
+
 body{
-    font-family: sans-serif;
-    color: #393D3F;
-    background-color: #D5BBB1;
+    font-family: contentFont;
+    color: #ffffff;
+    background-color: #ffffff;
 }
 
 #header{
-    background-color: #C98CA7;
+    font-family:myFont;
+    background-color: #ffffff;
+    color: #988678;
     display: flex;
     padding: 10px;
     align-items: center;
-    margin-bottom: 19px;
-    box-shadow: 0px 0px 3px #393d3f5d;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #logo{
     width: 60px;
     height: 60px;
     margin-right: 10px;
+}#logo:hover{
+    cursor: pointer;
 }
 
 #title{
     font-style: italic;
     display: inline;
+}#title:hover{
+    cursor: pointer;
 }
 
 #blog{
@@ -35,14 +54,18 @@ body{
 }
 
 .description{
-    background-color: #9CC4B2;
+    font-family: myFont;
+    background-color: #988678;
     border-radius: 5px;
     display: inline-block;
     text-align: justify;
     width: 50%;
     padding: 20px;
     margin-right: 3px;
-    box-shadow: 0px 0px 3px #393d3f5d;
+    box-shadow: 0px 0px 3px #9886788a;
+}.description:hover{
+    box-shadow: 0px 0px 10px #988678;
+    cursor: grab;
 }
 
 #photo-container{
@@ -53,17 +76,25 @@ body{
     border-radius: 5px;
     margin-left: 16px;
     width: 47%;
-    box-shadow: 0px 0px 3px #393d3f5d;
+    box-shadow: 0px 0px 3px #9886788a;
+    transition: box-shadow 0.15s;
+}.stmartin:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #988678;
 }
 
 .list-container{
     margin-right: 3%;
     margin-left: 3%;
     border-radius: 5px;
-    box-shadow: 0px 0px 3px #393d3f5d;
+    box-shadow: 0px 0px 3px #9886788a;
+    transition: box-shadow 0.15s;
+}.list-container:hover{
+    box-shadow: 0px 0px 10px #988678;
+    cursor: pointer;
 }
 .list{
-    background-color: #C98CA7;
+    background-color: #D9BDAC;
     padding: 10px;
     padding-top: 0px;
     display: flex;
@@ -77,16 +108,19 @@ body{
 
 li{
     margin: 3px;
+    font-size: 23px;
 }
+
 .lsit-title{
-    background-color: #E76D83;
+    background-color: #988678;
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    font-size: x-large;
+    font-size: 29px;
     font-weight: 550;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    padding: 10px;
 }
 
 .foods{
@@ -94,14 +128,9 @@ li{
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
-    background-color: #C98CA7;
+    background-color: #D9BDAC;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-}
-
-#foodimg{
-    border-radius: 5px;
-    box-shadow: 0px 0px 3px #393d3f5d;
 }
 
 #link{
@@ -113,18 +142,18 @@ li{
 a{
     text-decoration: underline;
     text-decoration-color: transparent;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 700;
-    color:#393D3F;
+    color:#988678;
     transition: font-size 0.15s, text-decoration-color 0.15s;
 }a:hover{
-    text-decoration-color: #393D3F;
-    font-size: 27px;
+    text-decoration-color: #988678;
+    font-size: 30px;
 }
 #arrow{
     font-size: 25px;
     font-weight: 700;
-    color:#393D3F;
+    color: #988678;
 }
 
 
@@ -132,11 +161,14 @@ button{
     border-style: solid;
     border-radius: 2px;
     border-width: 1px;
-    border-color:#393D3F;
-    color:#393D3F;
-    background-color:#9CC4B2;
-    transition: opacity 0.15s;
+    border-color:#ffffff;
+    color: #ffffff;
+    background-color:#988678;
+    transition: opacity 0.15s, padding 0.15s;
 }button:hover{
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.7;
+    padding: 1px;
+}button:active{
+    opacity: 0.4;
 }
