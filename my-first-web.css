@@ -86,7 +86,9 @@ body{
 .list-container{
     margin-right: 3%;
     margin-left: 3%;
+    margin-top: 50px;
     border-radius: 5px;
+    background-color: #D9BDAC;
     box-shadow: 0px 0px 3px #9886788a;
     transition: box-shadow 0.15s;
 }.list-container:hover{
@@ -94,16 +96,11 @@ body{
     cursor: pointer;
 }
 .list{
-    background-color: #D9BDAC;
+    background-color: transparent;
     padding: 10px;
     padding-top: 0px;
     display: flex;
     justify-content: center;
-}
-
-#list1{
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 li{
@@ -115,12 +112,12 @@ li{
     background-color: #988678;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
     font-size: 29px;
     font-weight: 550;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 10px;
+    height: 10%;
 }
 
 .foods{
@@ -128,34 +125,14 @@ li{
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
-    background-color: #D9BDAC;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+    background-color: transparent;
+}    
 
 #link{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
-
-a{
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    font-size: 28px;
-    font-weight: 700;
-    color:#988678;
-    transition: font-size 0.15s, text-decoration-color 0.15s;
-}a:hover{
-    text-decoration-color: #988678;
-    font-size: 30px;
-}
-#arrow{
-    font-size: 25px;
-    font-weight: 700;
-    color: #988678;
-}
-
 
 button{
     border-style: solid;
@@ -171,4 +148,25 @@ button{
     padding: 1px;
 }button:active{
     opacity: 0.4;
+}
+
+#playlist{
+    width: 100%;
+    border-radius: 1%;
+    box-shadow: 0px 0px 3px #9886788a;
+}
+a{
+    margin-top: 90px;
+    background-color:#D9BDAC;
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    align-items:end;
+    border-radius: 1%;
+    box-shadow: 0px 0px 3px #9886788a;
+    transition: box-shadow 0.15s;
+}a:hover{
+    box-shadow: 0px 0px 10px #988678;
+    cursor: pointer;
 }
