@@ -12,10 +12,6 @@ html{
     font-family: myFont;
     src: url(Fonts/aorell.ttf);
 }
-@font-face {
-    font-family: content;
-    src: url(Fonts/aorell.ttf);
-}
 
 body{
     background-color: #F0F0F0;
@@ -25,11 +21,14 @@ header{
     display: flex;
     align-items:start;
     justify-content: space-between;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     padding: 20px;
     padding-right: 0px;
     /* height: 100vh; */
     /* background-image:  linear-gradient(to bottom, rgb(248, 194, 194) 10%, rgba(138, 94, 36, 0.562)), url('Images/background.jpg'); */
+    /* width: 100%; */
+    height: 100vh;
+    background-image: linear-gradient(#4c9affb6, #4c9aff00), url(Images/wallpaperflare.com_wallpaper.jpg);
     background-position: center;
     background-size: cover;
     text-align: justify;
@@ -46,8 +45,8 @@ header{
 .logo{
     width: 80px;
 }
-header p{
-    font-family: content;
+header > .logo-container > p{
+    font-family: myFont;
     font-weight: 900;
     font-size: 25px;
     color: #02323f;
@@ -64,14 +63,14 @@ header p{
     justify-content: space-evenly;
     margin-top: 20px;
 }
-.page a{
+.pages > li > a{
     text-decoration: none;
     color: #02323f;
     font-weight:500;
     text-transform: uppercase;
 }
 
-.page::after{
+.pages > li::after{
     content: '';
     width: 0%;
     height: 2px;
@@ -79,7 +78,7 @@ header p{
     display: block;
     margin: auto;
     transition: 0.15s;
-}.page:hover::after{
+}.pages > li:hover::after{
     width: 100%;
 }
 
@@ -91,4 +90,10 @@ header p{
 }.menu:hover{
     cursor: pointer;
     transform: translate(0,-3px);
+}
+
+.stmartin{
+    
+    background-size: cover;
+    background-position: center;
 }
