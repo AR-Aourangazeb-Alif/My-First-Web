@@ -48,11 +48,11 @@ header{
 header > .logo-container > p{
     font-family: myFont;
     font-weight: 900;
-    font-size: 25px;
     color: #02323f;
     font-style: italic;
     /* line-height: 22px; */
     text-decoration: underline;
+    font-size: 25px;
 }
 
 .pages{
@@ -68,6 +68,9 @@ header > .logo-container > p{
     color: #02323f;
     font-weight:500;
     text-transform: uppercase;
+    transition: 0.18s;
+}.pages > li > a:hover{
+    font-size: 18px;
 }
 
 .pages > li::after{
