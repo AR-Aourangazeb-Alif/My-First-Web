@@ -18,6 +18,13 @@ body{
 }
 
 header{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom,#F0F0F0 20%, #02323f83), url(Images/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
     display: flex;
     align-items:start;
     justify-content: space-between;
@@ -26,19 +33,20 @@ header{
     padding-right: 0px;
     /* height: 100vh; */
     /* background-image:  linear-gradient(to bottom, rgb(248, 194, 194) 10%, rgba(138, 94, 36, 0.562)), url('Images/background.jpg'); */
-    /* width: 100%; */
-    height: 100vh;
-    background-image: linear-gradient(#f0f0f0 20%, #4c9aff00), url(Images/wallpaperflare.com_wallpaper.jpg);
+    /* background-image: linear-gradient(#f0f0f0 20%, #02323fcc), url(Images/wallpaperflare.com_wallpaper.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     /* text-align: justify; */
-}header ul{
+}header > nav  ul{
     list-style: none;
-}header ul > li > a{
+}header > nav ul > li > a{
     text-decoration: none;
     color: #02323f;
 }
 
+.logolink{
+    text-decoration: none;
+}
 .logo-container{
     display: flex;
     align-items: center;
@@ -53,7 +61,7 @@ header{
 .logo-container > p{
     /* font-family: myFont; */
     font-weight: 900;
-    color: #02323f;
+    color: #02323fb6;
     font-style: italic;
     /* line-height: 22px; */
     /* text-decoration: underline; */
@@ -62,7 +70,7 @@ header{
     content: "";
     height: 3px;
     width: 0%;
-    background-color: #02323f;
+    background-color: #02323fb6;
     display: block;
     transition: 0.2s;
 }.logo-container:hover > p::after{
@@ -147,4 +155,50 @@ header{
 }
 .dropdown li:hover:after{
     width: 100%;
+}
+
+header > .clickme{
+    display: flex;
+    width: 100%;
+    height: 81%;
+    align-items: center;
+    justify-content: center;
+    color: #02323f;
+    text-transform: uppercase;
+}
+
+
+header > .clickme > div > .button > a > button{
+    border-style: solid;
+    padding: 10px 50px;
+    background-color: transparent;
+    border-radius: 4%;
+    border-color: #02323f;
+    color: #02323f;
+    font-size: larger;
+    font-weight: 500;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}header > .clickme > div > .button > a > button:hover{
+    cursor: pointer;
+    background-color: #02323f;
+    color: #F0F0F0;
+    padding: 8px 48px;
+}header > .clickme > div > .button > a > button:active{
+    opacity: 0.7;
+}
+header > .clickme > div{
+    text-align-last: center;
+    margin-top: -20vh;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header > .clickme > div > h1{
+    align-self: first baseline;
+    font-size: 30px;
+    color: #02323fb6;
+}header > .clickme > div > h1:hover{
+    cursor: pointer;
 }
