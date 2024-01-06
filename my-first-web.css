@@ -4,9 +4,6 @@
     font-family: poppins;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
 @font-face{
     font-family: myFont;
@@ -15,6 +12,11 @@ html{
 
 body{
     background-color: #F0F0F0;
+}
+
+a{
+    text-decoration: none;
+    color: #02323f;
 }
 
 header{
@@ -39,9 +41,6 @@ nav{
     /* text-align: justify; */
 }header > nav  ul{
     list-style: none;
-}header > nav ul > li > a{
-    text-decoration: none;
-    color: #02323f;
 }
 
 .logolink{
